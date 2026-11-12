@@ -1,0 +1,16 @@
+{
+  "name": "Petanque Together",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [5173, 3001],
+  "portsAttributes": {
+    "5173": {
+      "label": "Petanque web",
+      "onAutoForward": "openBrowser"
+    },
+    "3001": {
+      "label": "Petanque API",
+      "onAutoForward": "silent"
+    }
+  }
+}
